@@ -21,16 +21,14 @@ function viewCart() {
   let items = cart.length;
   if (items === 0) {
     return `Your shopping cart is empty.`;
-  }
-  if (items > 0) {
-    let list = `${cart[0].itemName} at $${cart[0].itemPrice}`;
-    if (items > 1) {
-      for (let i = 1; i < items; i++) {
-        if (i === items) {
-          list += ` and ${cart[i].itemName} at $${cart[i].itemPrice},`
-        } else {
-          list += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
-        }
+  } else if (items > 0) {
+    for (let i = 0; i < items; i++) {
+      if (i === 0) {
+        let list = `${cart[0].itemName} at $${cart[0].itemPrice}`;
+      } else if (i === items) {
+        list += ` and ${cart[i].itemName} at $${cart[i].itemPrice},`
+      } else {
+        list += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
       }
     }
     return `In your cart, you have ${list}.`;
