@@ -26,9 +26,9 @@ function viewCart() {
       if (a === 0) {
         var list = `${cart[0].itemName} at $${cart[0].itemPrice}`;
       } else if (a === items - 1) {
-        list += `, and ${cart[i].itemName} at $${cart[i].itemPrice}`
+        list += `, and ${cart[a].itemName} at $${cart[a].itemPrice}`
       } else {
-        list += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
+        list += `, ${cart[a].itemName} at $${cart[a].itemPrice}`
       }
     }
     return `In your cart, you have ${list}.`;
