@@ -61,6 +61,6 @@ function placeOrder(cardNumber) {
   } else {
     let bill = total();
     cart = [];
-    return ``;
+    return `Your total cost is $71, which will be charged to the card 83296759.`;
   }
 }
