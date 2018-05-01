@@ -61,5 +61,6 @@ function placeOrder(cardNumber) {
   } else {
     let bill = total();
     cart = [];
+    return ``;
   }
 }
