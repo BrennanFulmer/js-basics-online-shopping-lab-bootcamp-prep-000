@@ -22,10 +22,10 @@ function viewCart() {
   if (items === 0) {
     return `Your shopping cart is empty.`;
   } else {
-    for (let i = 0; i < items; i++) {
-      if (i === 0) {
+    for (let a = 0; a < items; i++) {
+      if (a === 0) {
         var list = `${cart[0].itemName} at $${cart[0].itemPrice}`;
-      } else if (i === items - 1) {
+      } else if (a === items - 1) {
         list += `, and ${cart[i].itemName} at $${cart[i].itemPrice}`
       } else {
         list += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
