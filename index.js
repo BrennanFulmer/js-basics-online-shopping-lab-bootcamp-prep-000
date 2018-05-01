@@ -22,7 +22,7 @@ function viewCart() {
   if (items === 0) {
     return `Your shopping cart is empty.`;
   } else {
-    for (let a = 0; a < items; i++) {
+    for (let a = 0; a < items; a++) {
       if (a === 0) {
         var list = `${cart[0].itemName} at $${cart[0].itemPrice}`;
       } else if (a === items - 1) {
@@ -37,7 +37,7 @@ function viewCart() {
 
 function total() {
   let total = 0;
-  for (let b = 0; b < cart.length; x++) {
+  for (let b = 0; b < cart.length; b++) {
     total += cart[b].itemPrice;
   }
   return total;
