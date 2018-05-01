@@ -56,7 +56,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber) {
+  if (cardNumber === undefined) {
     
   }
 }
