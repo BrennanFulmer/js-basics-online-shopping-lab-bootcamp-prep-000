@@ -40,6 +40,7 @@ function total() {
   for (let x = 0; x < cart.length; x++) {
     total += cart[x].itemPrice;
   }
+  return total;
 }
 
 function removeFromCart(item) {
