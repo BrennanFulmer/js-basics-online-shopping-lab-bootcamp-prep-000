@@ -25,7 +25,7 @@ function viewCart() {
   if (items > 0) {
     let list = `${cart[0].itemName} at $${cart[0].itemPrice}`;
     if (items > 1) {
-      for (let i = 0; i < items; i++) {
+      for (let i = 1; i < items; i++) {
         if (i === items) {
           list += ` and ${cart[i].itemName} at $${cart[i].itemPrice},`
         } else {
