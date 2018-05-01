@@ -45,7 +45,7 @@ function total() {
 
 function removeFromCart(item) {
   if (cart.length === 0) {
-    
+    return That item is not in your cart.
   } else {
     
   }
